@@ -354,7 +354,7 @@
 			</Item>
 		</Item>
 		<Item Name="ISA010.lvlib" Type="Library" URL="../ISA010/ISA010.lvlib"/>
-		<Item Name="Launcher.vi" Type="VI" URL="/C/Users/72448/Desktop/ISSP/Launcher.vi"/>
+		<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 		<Item Name="Test ISA010_module API.vi" Type="VI" URL="../ISA010_module/Test ISA010_module API.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
