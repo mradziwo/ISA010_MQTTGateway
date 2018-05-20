@@ -109,4 +109,6 @@
 	<Item Name="PackCommand.vi" Type="VI" URL="../PackCommand.vi"/>
 	<Item Name="ConfAndNOtProcessing.vi" Type="VI" URL="../ConfAndNOtProcessing.vi"/>
 	<Item Name="EnqueueCommand.vi" Type="VI" URL="../EnqueueCommand.vi"/>
+	<Item Name="ProcessQuerry.vi" Type="VI" URL="../ProcessQuerry.vi"/>
+	<Item Name="process frame.vi" Type="VI" URL="../process frame.vi"/>
 </Library>
