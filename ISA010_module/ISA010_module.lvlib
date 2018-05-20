@@ -106,4 +106,7 @@
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="PackCommand.vi" Type="VI" URL="../PackCommand.vi"/>
+	<Item Name="ConfAndNOtProcessing.vi" Type="VI" URL="../ConfAndNOtProcessing.vi"/>
+	<Item Name="EnqueueCommand.vi" Type="VI" URL="../EnqueueCommand.vi"/>
 </Library>
