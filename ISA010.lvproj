@@ -1,6 +1,14 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="17008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -125,7 +133,22 @@
 				<Item Name="Delacor_lib_QMH_Cloneable Module Admin.lvclass" Type="LVClass" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Delacor/Delacor QMH/Libraries/Cloneable Module Admin_class/Delacor_lib_QMH_Cloneable Module Admin.lvclass"/>
 				<Item Name="Delacor_lib_QMH_Module Admin.lvclass" Type="LVClass" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Delacor/Delacor QMH/Libraries/Module Admin_class/Delacor_lib_QMH_Module Admin.lvclass"/>
 				<Item Name="Delacor_lib_QMH_Message Queue.lvclass" Type="LVClass" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Delacor/Delacor QMH/Libraries/Message Queue_class/Delacor_lib_QMH_Message Queue.lvclass"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="MessageTypedef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/MQTT/MessageTypedef.ctl"/>
 				<Item Name="mqttRXsubscriptionEventFunction.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTXqueue/mqttRXsubscriptionEventFunction.ctl"/>
 				<Item Name="mqttTXdataQueueFunction.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTXqueue/mqttTXdataQueueFunction.ctl"/>
@@ -140,6 +163,36 @@
 				<Item Name="mqttRXsubscriptionEventData.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTXqueue/mqttRXsubscriptionEventData.ctl"/>
 				<Item Name="mqttRXsubscriptionEvent.vi" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTXqueue/mqttRXsubscriptionEvent.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Release Waiting Procs.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
+				<Item Name="RendezvousDataCluster.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RendezvousDataCluster.ctl"/>
+				<Item Name="Rendezvous RefNum" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous RefNum"/>
+				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
+				<Item Name="GetNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/GetNamedRendezvousPrefix.vi"/>
+				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
+				<Item Name="Create New Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create New Rendezvous.vi"/>
+				<Item Name="Not A Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Not A Rendezvous.vi"/>
+				<Item Name="Rendezvous Name &amp; Ref DB Action.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB Action.ctl"/>
+				<Item Name="Rendezvous Name &amp; Ref DB.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB.vi"/>
+				<Item Name="Create Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create Rendezvous.vi"/>
+				<Item Name="usereventprio.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/event_ctls.llb/usereventprio.ctl"/>
+				<Item Name="RemoveNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RemoveNamedRendezvousPrefix.vi"/>
+				<Item Name="Destroy A Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy A Rendezvous.vi"/>
+				<Item Name="Destroy Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy Rendezvous.vi"/>
 				<Item Name="mqttTXdataQueueEnqueue.vi" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTXqueue/mqttTXdataQueueEnqueue.vi"/>
 				<Item Name="mqttCmdPublishAckCommand.vi" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttCmd/mqttCmdPublish/mqttCmdPublishAckCommand.vi"/>
 				<Item Name="mqttCmdPublishReceivedCommand.vi" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttCmd/mqttCmdPublish/mqttCmdPublishReceivedCommand.vi"/>
@@ -153,56 +206,10 @@
 				<Item Name="mqttWillInformation.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTypedef/mqttWillInformation.ctl"/>
 				<Item Name="mqttConnectionFlags.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTypedef/mqttConnectionFlags.ctl"/>
 				<Item Name="mqttBroker.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/Libraries/mqtt Folder/src/class/mqtt/mqttTypedef/mqttBroker.ctl"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="GetNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/GetNamedRendezvousPrefix.vi"/>
-				<Item Name="RemoveNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RemoveNamedRendezvousPrefix.vi"/>
-				<Item Name="RendezvousDataCluster.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RendezvousDataCluster.ctl"/>
-				<Item Name="Rendezvous RefNum" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous RefNum"/>
-				<Item Name="Destroy A Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy A Rendezvous.vi"/>
-				<Item Name="Rendezvous Name &amp; Ref DB Action.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB Action.ctl"/>
-				<Item Name="usereventprio.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/event_ctls.llb/usereventprio.ctl"/>
-				<Item Name="Not A Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Not A Rendezvous.vi"/>
-				<Item Name="Rendezvous Name &amp; Ref DB.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB.vi"/>
-				<Item Name="Destroy Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy Rendezvous.vi"/>
-				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
-				<Item Name="Create New Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create New Rendezvous.vi"/>
-				<Item Name="Create Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create Rendezvous.vi"/>
-				<Item Name="Release Waiting Procs.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
-				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
-				<Item Name="DialogType.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="Set String Value.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="Find Tag.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>
-				<Item Name="Format Message String.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/ErrWarn.ctl"/>
-				<Item Name="eventvkey.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Details Display Dialog.vi"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
-				<Item Name="General Error Handler.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="../libraries/MQTT.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="New Text Document.txt" Type="Document" URL="../libraries/New Text Document.txt"/>
-			<Item Name="Serializer.lvlibp" Type="LVLibp" URL="../libraries/Serializer.lvlibp">
+			<Item Name="serializer.lvlibp" Type="LVLibp" URL="../libraries/Serializer.lvlibp">
 				<Item Name="Public API" Type="Folder">
 					<Item Name="Arguments" Type="Folder">
 						<Item Name="Request" Type="Folder">
@@ -304,9 +311,6 @@
 				<Item Name="Delacor_lib_QMH_Message Queue.lvclass" Type="LVClass" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Delacor/Delacor QMH/Libraries/Message Queue_class/Delacor_lib_QMH_Message Queue.lvclass"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
-				<Item Name="Get LV Class Path.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
@@ -335,20 +339,23 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="usereventprio.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/event_ctls.llb/usereventprio.ctl"/>
-				<Item Name="Release Waiting Procs.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
-				<Item Name="RendezvousDataCluster.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RendezvousDataCluster.ctl"/>
+				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Default Value.vi"/>
+				<Item Name="Get LV Class Path.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Path.vi"/>
 				<Item Name="Rendezvous RefNum" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous RefNum"/>
-				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="GetNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/GetNamedRendezvousPrefix.vi"/>
 				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
+				<Item Name="RendezvousDataCluster.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RendezvousDataCluster.ctl"/>
 				<Item Name="Create New Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create New Rendezvous.vi"/>
-				<Item Name="Rendezvous Name &amp; Ref DB Action.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB Action.ctl"/>
 				<Item Name="Not A Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Not A Rendezvous.vi"/>
+				<Item Name="Rendezvous Name &amp; Ref DB Action.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB Action.ctl"/>
 				<Item Name="Rendezvous Name &amp; Ref DB.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB.vi"/>
 				<Item Name="Create Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Create Rendezvous.vi"/>
+				<Item Name="Release Waiting Procs.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
+				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
+				<Item Name="usereventprio.ctl" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/event_ctls.llb/usereventprio.ctl"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="RemoveNamedRendezvousPrefix.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/RemoveNamedRendezvousPrefix.vi"/>
 				<Item Name="Destroy A Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy A Rendezvous.vi"/>
 				<Item Name="Destroy Rendezvous.vi" Type="VI" URL="../libraries/Serializer.lvlibp/1abvi3w/vi.lib/Utility/rendezvs.llb/Destroy Rendezvous.vi"/>
@@ -356,9 +363,11 @@
 			</Item>
 		</Item>
 		<Item Name="ISA010.lvlib" Type="Library" URL="../ISA010/ISA010.lvlib"/>
-		<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 		<Item Name="mbtest.vi" Type="VI" URL="../ISA010_module/mbtest.vi"/>
+		<Item Name="MQTT_NEW.json" Type="Document" URL="../MQTT_NEW.json"/>
+		<Item Name="Serializer.json" Type="Document" URL="../Serializer.json"/>
 		<Item Name="Test ISA010_module API.vi" Type="VI" URL="../ISA010_module/Test ISA010_module API.vi"/>
+		<Item Name="uruchomienie.lvlib" Type="Library" URL="../../Uruchomienie/Libraries/uruchomienie.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
@@ -433,34 +442,153 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{90A36C4F-4D0D-45B1-90A0-31BC9B353290}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">ISA010.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010/ISA010.lvlibp</Property>
+				<Property Name="Destination[0].destName" Type="Str">uruchomienie.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010/uruchomienie.lvlibp</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D533DD8C-2A38-4FFF-A98E-799DD4905FE0}</Property>
+				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FAD35590-2447-4ADB-A2FA-96C6EB914041}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ISA010.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
-				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
-				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">Grundfos</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/ISA010_module Module</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Libraries</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/uruchomienie.lvlib/Launcher.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Test ISA010_module API.vi</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/mbtest.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/uruchomienie.lvlib</Property>
+				<Property Name="Source[7].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[7].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[7].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[7].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[7].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">8</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">ISA010</Property>
 				<Property Name="TgtF_internalName" Type="Str">ISA010</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 Grundfos</Property>
 				<Property Name="TgtF_productName" Type="Str">ISA010</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{1528F5FE-8465-4916-8512-CC641D433289}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">ISA010.lvlibp</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">uruchomienie.lvlibp</Property>
+			</Item>
+			<Item Name="ISA010exe" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{0FD0A7AE-76DD-4EFF-B233-11A0E6C43C6E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{702710C5-0668-40D6-8FCD-34B1A41891E5}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.registered.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{8CE5A1B7-AC22-4237-BEDB-061FF2533D6F}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">ISA010exe</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010exe</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{D5197A2A-C09C-4348-B387-C3D0D9D6D30F}</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ISA010.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010exe/ISA010.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010exe</Property>
+				<Property Name="Destination[2].destName" Type="Str">support</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/ISA010exe/support</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8F1767FD-ABA9-499A-9E5B-8EB159ADC9B8}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/uruchomienie.lvlib/Launcher.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Libraries/modbus.lvlibp</Property>
+				<Property Name="Source[10].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Libraries/mqtt.lvlibp</Property>
+				<Property Name="Source[11].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Libraries/serializer.lvlibp</Property>
+				<Property Name="Source[12].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/uruchomienie.lvlib</Property>
+				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/ISA010_module Module</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Libraries</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/ISA010.lvlib</Property>
+				<Property Name="Source[5].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Library</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/mbtest.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/MQTT_NEW.json</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Serializer.json</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Test ISA010_module API.vi</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">13</Property>
+				<Property Name="TgtF_companyName" Type="Str">registered</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">ISA010exe</Property>
+				<Property Name="TgtF_internalName" Type="Str">ISA010exe</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 registered</Property>
+				<Property Name="TgtF_productName" Type="Str">ISA010exe</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{14E8E4B1-144F-4F3C-8560-DC57911F8C55}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ISA010.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>
